@@ -28,9 +28,13 @@ void Quit::execute(Server& server, Client& client)
     int pfdIndex = server.index_of(client);
     LOG_DTV_CMD(pfdIndex);
     std::string trailingMsg = _quitMsg;
+    if (!trailingMsg.empty() && trailingMsg[0] == ':')
+    {
+        trailingMsg = trailingMsg.substr(1);
+    }
     if (trailingMsg.empty())
         trailingMsg = ircConfig.trailing(TRANSFER_QUIT);
-    client.broadcast_to_all_channels(server, TRANSFER_QUIT, "", trailingMsg);
+    client.broadcast_to_all_channels(server, TRANSFER_QUIT, trailingMsg);
     server.add_events_of(client, 0);
     server.cleanup_socket_and_client(pfdIndex);
 }
