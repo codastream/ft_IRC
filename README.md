@@ -10,7 +10,9 @@
  ░░░░░        ░░░░░  ░░░░░░░░░ ░░░░░ ░░░░░   ░░░░░   ░░░░░░░░░
 ```
 
-This is the main repository for Internet Relay Chat project at School 42<br />
+This is the main repository for Internet Relay Chat project at School 42. It is the joint work of [JM](https://github/jmtth), [Nil](https://github.com/Ilia1177) and [François](https://github.com/codastream)
+
+<br />
 
 ![Static Badge](https://img.shields.io/badge/-ft__IRC-blue?logo=42&logoColor=white) ![Static Badge](https://img.shields.io/badge/Language-C%2B%2B-blue) ![Static Badge](https://img.shields.io/badge/Protocole-IRC-blue) ![Static Badge](https://img.shields.io/badge/Doc-Doxygen-blue) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/codastream/ft_IRC/c-cpp.yml)
 
