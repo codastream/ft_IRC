@@ -24,7 +24,7 @@ Topic::Topic(std::string& params) : _clearTopic(false)
         _topic      = "";
     } else if (!topicArg.empty()) {
         if (topicArg.length() > 1 && topicArg[1] == ':')
-            _topic = topicArg.substr(3);
+            _topic = topicArg.substr(2);
         else
             _topic = topicArg.substr(1);
     }
